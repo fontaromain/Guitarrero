@@ -1,9 +1,9 @@
- Guitarrero is a clone of Frets on Fire™ game.
+Guitarrero is a clone of Frets on FireÂ© game.
 
 Main Features :
     Totally free
     Fully written in C++ for best performances
-    Fully compliant with Frets On Fire™ songs
+    Fully compliant with Frets On FireÂ© songs
     Supports Multiplayer
     Skinnable GUI
     3D Scenery (not yet fully functionnal)
