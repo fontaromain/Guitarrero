@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<config>
+	<!-- Configurator -->
+	<btnSongsPath				value="Changer le répertoire des musiques" />
+	<btnExit 					value="Quitter" />
+	<btnPlay 					value="Jouer !" />
+	<lblDelay 					value="Délai A/V" />
+	<lblSkins 					value="Skin" />
+	<lblLang 					value="Langue" />
+	<lblRes 					value="Résolution" />
+	<lblVSynch 					value="VSynch" />
+	<lblScenery					value="Scene 3D" />
+	<lblStencilBuffer			value="Stencil Buffer" />
+	<lblFullScreen 				value="Plein écran" />
+	<lblGraphicOptions 			value="Options Graphiques" />
+	<lblGameOptions 			value="Options du Jeu" />
+	<lblControlOptions			value="Contrôles" />
+	<lblNoSongs					value="Pas de musiques dans le nouveau répertoire" />
+	<lblPlayer2					value="Joueur 2" />
+	<lblPlayer1					value="Joueur 1" />
+
+	<!-- Main page -->
+	<mainBtnExit 				value="Quitter" />
+	<mainBtnCredits 			value="Credits" />
+	<mainBtnPlay 				value="Jouer" />
+
+	<!-- Credits page -->
+	<creditsBtnGoMenu			value="Retour" />
+
+	<!-- Select song page -->
+	<selectsongBtnGoMenu		value="Retour" />
+	<selectsongBtnGoMode		value="Jouer" />
+	<selectsongChangeSongUp		value="Musique +" />
+	<selectsongChangeSondDown	value="Musique -" />
+	<selectsongNoScore			value="Pas de Scores" />
+
+	<!-- No levels page -->
+	<nolevelsBtnBack			value="Retour" />
+
+	<!-- Select mode page -->
+	<selectmodeBtnPlay			value="Jouer" />
+	<selectmodeBtnBack 			value="Retour" />
+	<selectmodeBtnChangeMode 	value="Mode de jeu" />
+	<selectmodeBtnChangePlayer 	value="Joueurs " />
+	<selectmodeModeNormal		value="Normal" />
+	<selectmodeModeReflex		value="Réflexes" />
+	<selectmodeTextPlayer1		value="1 Joueur" />
+	<selectmodeTextPlayer2		value="2 Joueurs" />
+	<selectmodeLevelEasy		value="Débutant" />
+	<selectmodeLevelMedium		value="Apprenti" />
+	<selectmodeLevelNormal		value="Confirmé" />
+	<selectmodeLevelHard		value="Expert" />
+	<selectmodeChangeLevel		value="Niveaux" />
+
+	<!-- Select special mode page -->
+	<selectsmodeBtnPlay			value="Jouer" />
+	<selectsmodeBtnBack 		value="Retour" />
+	<selectsmodeBtnChangeMode 	value="Changer de Mode" />
+
+	<!-- Game page -->
+	
+	<!-- Pause page -->
+	<pauseBtnGoMenu				value="Menu" />
+	<pauseBtnRestart			value="Recommencer" />
+	<pauseBtnResume				value="Reprendre" />
+
+	<!-- Statistics page -->
+	<statsBtnGoMenu				value="Menu" />
+	<statsBtnSelectsong			value="Choisir une autre musique" />
+	<statsTrackLength 			value="Duree de la piste : " />
+	<statsNoteCount				value="Nombre de notes : " />
+	<statsCorrectlyPlayed		value="Notes correctement jouees : " />
+	<statsAchieved 				value="Pourcentage acheve : " />
+	<statsLevel					value="Niveau : " />
+	<statsScore					value="Score : " />
+	<statsLongestStreak			value="Maximum de notes consécutives : " />
+	<statsMaxMulti				value="Multiplicateur maximum : " />
+</config>

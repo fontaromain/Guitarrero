@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+
+<!-- Main page -->	
+<backgroundMain		file="/Menus/back_menu.jpg"/>
+<fontMain			file="/Menus/Cartoon.ttf"/>
+<topMain			file="/Menus/top_menu.png" 			x="180" y="0" />
+<button1Main		file="/Menus/Buttons/btn1.png"		x="-200" y="240" a="255" r="0" g="0" b="0" />
+<button2Main		file="/Menus/Buttons/btn2.png"		x="-200" y="100" a="255" r="0" g="0" b="0" />
+<button3Main		file="/Menus/Buttons/btn3.png"		x="-200" y="-40" a="255" r="0" g="0" b="0" />
+
+<!-- Credits page -->
+<backgroundCredits 	file="/Menus/back_credits.jpg"/>
+<fontCredits		file="/Menus/Cartoon.ttf"/>
+<button1Credits	 	file="/Menus/Buttons/btn1.png"		x="-200" y="240" a="255" r="0" g="0" b="0" />
+
+<!-- Select song page -->
+<backgroundSong 	file="/Menus/back_song.jpg"/>
+<fontSong			file="/Menus/Cartoon.ttf"/>
+<button1Song 		file="/Menus/Buttons/btn1.png"		x="-200" y="240" a="255" r="0" g="0" b="0" />
+<button2Song 	 	file="/Menus/Buttons/btn2.png"		x="-200" y="100" a="255" r="0" g="0" b="0" />
+<button3Song 		file="/Menus/Buttons/btn3.png"		x="-200" y="-40" a="255" r="0" g="0" b="0" />
+<button4Song 		file="/Menus/Buttons/btn4.png"		x="-200" y="-180" a="255" r="0" g="0" b="0" />
+<songListColor		a="255" r="255" g="255" b="0" />
+<selectedSongColor	a="255" r="255" g="128" b="128" />
+<scoreTitleColor	a="255" r="255" g="0" b="0" />
+<scoreListColor		a="255" r="255" g="255" b="255" />
+
+<!-- Select mode page -->
+<backgroundMode 	file="/Menus/back_mode.jpg"/>
+<fontMode			file="/Menus/Cartoon.ttf"/>
+<button1Mode 		file="/Menus/Buttons/btn1.png"		x="-200" y="240" a="255" r="0" g="0" b="0" />
+<button2Mode 		file="/Menus/Buttons/btn2.png"		x="-200" y="100" a="255" r="0" g="0" b="0" />
+<button3Mode  		file="/Menus/Buttons/btn3.png"		x="-200" y="-40" a="255" r="0" g="0" b="0" />
+<button4Mode  		file="/Menus/Buttons/btn4.png"		x="-200" y="-180" a="255" r="0" g="0" b="0" />
+<levelListPosition	x="0" y="150" />
+<playerListPosition	x="0" y="-150" />
+<levelListColor		a="255" r="255" g="255" b="255" />
+<selectedLevelColor	a="255" r="255" g="128" b="128" />
+<nbPlListColor		a="255" r="255" g="255" b="255" />
+<selectedNbPlColor	a="255" r="255" g="128" b="128" />
+
+<!-- No levels page -->
+<backgroundNoLevels	file="/Menus/back_nolevels.jpg"/>
+<fontNoLevels		file="/Menus/Cartoon.ttf"/>
+<button1NoLevels 	file="/Menus/Buttons/btn1.png"		x="-200" y="240" a="255" r="0" g="0" b="0" />
+
+<!-- Select special mode page -->
+<backgroundSmode 	file="/Menus/back_smode.jpg"/>
+<fontSmode			file="/Menus/Cartoon.ttf"/>
+<button1Smode 		file="/Menus/Buttons/btn1.png"		x="-200" y="240" a="255" r="0" g="0" b="0" />
+<button2Smode 		file="/Menus/Buttons/btn2.png"		x="-200" y="100" a="255" r="0" g="0" b="0" />
+<button3Smode  		file="/Menus/Buttons/btn3.png"		x="-200" y="-40" a="255" r="0" g="0" b="0" />
+<smodeListPosition	x="0" y="0" />
+<smodeListColor		a="255" r="255" g="255" b="255" />
+<selectedSModeColor	a="255" r="255" g="128" b="128" />
+
+<!-- Pause page -->
+<backgroundPause	file="/Menus/back_pause.png"/>
+<fontPause			file="/Menus/Cartoon.ttf"/>
+<button1Pause  		file="/Menus/Buttons/btn1.png"		x="-200" y="240" a="255" r="0" g="0" b="0" />
+<button2Pause 		file="/Menus/Buttons/btn2.png"		x="-200" y="100" a="255" r="0" g="0" b="0" />
+<button3Pause  		file="/Menus/Buttons/btn3.png"		x="-200" y="-40" a="255" r="0" g="0" b="0" />
+
+<!-- Statistics page -->
+<backgroundStats 	file="/Menus/back_stats.jpg"/>
+<fontStats			file="/Menus/Cartoon.ttf"/>
+<button1Stats  		file="/Menus/Buttons/btn1.png"		x="-200" y="240" a="255" r="0" g="0" b="0" />
+<button2Stats 		file="/Menus/Buttons/btn2.png"		x="-200" y="100" a="255" r="0" g="0" b="0" />
+
+<!-- Ingame page -->
+<backgroundGame 	file="/Menus/back_game.jpg"/>
+<neck			 	file="/Other/neck.jpg"/>
+<lines				file="/Other/lines.png"/>
+<missedLine			file="/Notes/missedLine.png"/>
+<missedNote			file="/Notes/missedNote.png"/>
+<precisionHigh		file="/Other/hPrec.jpg"/>
+<precisionMed		file="/Other/mPrec.jpg"/>
+<precisionLow		file="/Other/lPrec.jpg"/>
+<playError			file="/Other/error.jpg"/>
+<playerSCounter1P	x="0" y="-800" />
+<player1SCounter2P	x="0" y="800" />
+<player2SCounter2P	x="0" y="-800" />
+
+<!-- Score Counter (ingame) -->
+<scoreCounter 		file="/Other/scoreCounter.png"/>
+<mult1x 			file="/Other/mult1x.png"/>
+<mult2x 			file="/Other/mult2x.png"/>
+<mult3x 			file="/Other/mult3x.png"/>
+<mult4x 			file="/Other/mult4x.png"/>
+<fontScoreCounter	file="/Other/fontCounter.png"/>
+
+<!-- Time Counter (ingame) -->
+<timeCounter 		file="/Other/timeCounter.png"/>
+<fontTimeCounter	file="/Other/fontCounter.png"/>
+
+<!-- Note (Normal) -->
+<0 					file="/Notes/note0.png"/>
+<1			 		file="/Notes/note1.png"/>
+<2			 		file="/Notes/note2.png"/>
+<3			 		file="/Notes/note3.png"/>
+<4			 		file="/Notes/note4.png"/>
+<!-- Note (Tapping) -->
+<5 					file="/Notes/noteT0.png"/>
+<6			 		file="/Notes/noteT1.png"/>
+<7			 		file="/Notes/noteT2.png"/>
+<8			 		file="/Notes/noteT3.png"/>
+<9			 		file="/Notes/noteT4.png"/>
+<!-- Note (End Texture) -->
+<10 				file="/Notes/noteE0.png"/>
+<11			 		file="/Notes/noteE1.png"/>
+<12			 		file="/Notes/noteE2.png"/>
+<13			 		file="/Notes/noteE3.png"/>
+<14			 		file="/Notes/noteE4.png"/>
+<!-- Keys textures -->
+<15					file="/Notes/keysel0.png"/>
+<16					file="/Notes/keysel1.png"/>
+<17	 				file="/Notes/keysel2.png"/>
+<18	 				file="/Notes/keysel3.png"/>
+<19 				file="/Notes/keysel4.png"/>
+<keydesel			file="/Notes/keydesel.png"/>
+
+<!-- Notes Sprites -->
+<100 				file="/Notes/spriteAnim0.png"/>
+<101			 	file="/Notes/spriteAnim1.png"/>
+<102			 	file="/Notes/spriteAnim2.png"/>
+<103			 	file="/Notes/spriteAnim3.png"/>
+<104			 	file="/Notes/spriteAnim4.png"/>
+
+<!-- Game Sounds -->
+<menuButtonsSound	file="/Sounds/menuButton.wav"/>
+<playingError		file="/Sounds/playError.wav"/>
+<menuSelectSound	file="/Sounds/changeSelection.wav"/>
+<sceneEntrySound	file="/Sounds/entry.wav"/>

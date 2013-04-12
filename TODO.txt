@@ -1,0 +1,250 @@
+Suggestions:
+-"Miss" sound effect is only played if a note is played outside of the correct hit window. 
+-Add the ability to detect input to map buttons (ie. to game controllers)
+-Provide some documentation to explain settings, gameplay mode (ie. what is "Reflex"?)
+-Provide a per-player difficulty selection
+-Provide a per-player instrument track selection
+-Allow the up/down arrow keys to be used in the difficulty selection screen.
+-It might be convenient to be able to use left/right arrow key to change between the difficulty or player # selection, and highlight the box for whichever is action to be controlled by the up/down keys.
+-Seems to miss some notes during gameplay in some songs
+-If a frets is for example the key a you can't properly enter your name at end of a song
+-Add some graphic effect when playing correctly
+
+
+- TODO
+	-> (SOUND) erreurs de jeu -> krouinch ?
+	-> (SOUND) si on restart le jeu mais qu'avant que le jeu ai recommencé on fait pause -> jeu et le son repart là où on en etait
+	-> (SOUND) en 2P sound bogue (mute gauche et droite ?) -> workaround
+	-> (GRAPHIC) le neck va plus vite que les notes -> workaround
+	-> (GRAPHIC) perso animé -> lancer anim by name (predefined) + scene = irrEdit xml avec cam et eclairages
+	-> (GRAPHIC) brouillard fond neck : hyp create texture en fct du fond et apply
+	-> (TESTS) mem leaks, configurateur si pas de songs dans le dossier choisi lever erreur
+	-> (MISC) integrer zik defaut
+	-> (MISC) Faire "readme" - livré sans garanties ?
+	-> (CODE) Optimiser gridmanager -> deux objets
+	-> (CODE) dossier neck avec xml de config et choix aléatoire ? dans ./ ou dans ./Skin/xx/ ?
+	-> (CODE) underlines -> revoir animator car leger pbm jointures (caché par les lignes epaisses) en 2P
+	-> (CODE) inputReceiver -> REVOIR
+	-> (CODE) deplacer la méthode de guipage getTextLines dans l'objet font (optimisation)
+	-> (CODE) optimiser calculs dans gridManagers ? et pbm burn line en 2P (animators ?!)
+	-> (CODE) revoir lanceur en utilisant au minimum irrlicht (class wxFileSystem et wxXMLDocument) ?
+	-> (CODE) jukebox : deux fois la meme clé == ? (actuellement erase)
+	-> (CODE) permettre comme dans GH les lignes longues avec à côté d'autres notes à jouer + les lignes collées (sans séparation)
+	-> (GAME) revenir au meme etat pour les niveaux dans modeSelectPage ?
+	-> (GAME) mode de jeu - Duel (alterne P1 P2) -> prendre en compte le nb de notes, leur longueur etc, en gros leur score @ x4
+	-> (GAME) retour timé de pause ?
+	-> (GAME) ajouter lyrics ?
+	-> (GUI) gerer l'alpha
+	-> (GUI) animators pour la gui ?
+	-> (GUI) GuiStatsPage -> definir les positions
+	-> (GUI) GuiSongSelectPage -> definir dans l'xml le pas alpha
+	-> (GUI) definir taille dans xml pour chaque page ?
+	-> (GUI) un ressource par page avec son fichier xml de config ?
+
+
+- Done v1.00 BETA 5
+	-> (CODE) Fixed - Sometimes play drums instead of guitar track
+	-> (CODE) Fixed - Guitarrero wasn't reloading the delay value of song for each play
+
+- Done v1.00 BETA 4
+	-> (CODE) Fixed - Guitarrero still seems to have full CPU utilization when paused or in menu
+	-> (CODE) Fixed - Bug when going to song selection, going back and then going again in song selection -> crash
+	-> (CODE) Fixed - If I miss playing a sustained note, I can play it in the middle and the game resumes playing the audio track
+	-> (CODE) Fixed - When filtering songs by name, the preview always change even if the song dont disapear
+	-> (GUI) Added the hability of making optional to cut the audio if the frets are released too early (sustainMode in launcher (checked = ignore early frets releases))
+
+- Done v1.00 BETA 3
+	-> (GUI) Option to pause/start (fret 5) song playback during song selection
+	-> (GUI) Allowed Up/Down arrow keys to move up/down during song selection
+	-> (GUI) "Song Up" scrolls the list down now
+	-> (GUI) "Song down" scrolls the list up now
+	-> (GUI) Fixed - Fret 5 and pick perform song down even though they're not labeled to do anything in the song selection menu
+	-> (GUI) Fixed - Pressing arrow keys causes the song list to jump to the top during song selection.
+	-> (GUI) Could filter songs with user entries
+	-> (MISC) Change spelling of "Begginer" to "Beginner" and "Excelent" to "Excellent"
+	-> (CODE) Improve the efficiency of the main loop : when paused no more useless use of ressources
+	-> (CODE) Should be fixed - play drum track instead of the expected guitar track (PART GUITAR in midi file)
+	-> (CODE) Fixed - When exiting to the main menu, file handle(s) to the last chart played are not closed
+	-> (GAME) Add the ability to redirect the Songs folder in the config file
+	-> (GAME) Add The delay value in the song.ini file to be used
+
+- Done v1.00 BETA 2
+    -> (CODE) Compatibilité VISTA
+    -> (CODE) Problème Statistiques (notes non comptées si ratées)
+
+- Done v1.00 BETA 1
+	-> (MISC) Faire "howto make skin scene"
+	-> (GUI) les textures créées boguent avec les lettres longues -> WORKAROUND (+= 2)
+	-> (GUI) clip pour les textures générée par la font
+	-> (GUI) nettoyer les textures des pages dynamiques au fur et a mesure
+	-> (GUI) GuiSongSelectPage -> afficher filtre
+	-> (GUI) definir marge sur les bords des textes sinon si texte long bords collés au clip
+	-> (CODE) fuite mémoire setCurrentLineEffect -> pbm animators -> grabed twice
+	-> (CODE) si on quitte le jeu pendant le jeu le son se décale
+	-> (TESTS) mem leaks guipage, tous les menus en wide, sons manquant, textures manquante, mid manquant, notes manquantes, textures vides
+	-> (SOUND) mutte apres longues notes abusifs
+	-> (SOUND) trouver et définir sons menu, erreurs et changement de selection
+	-> (SOUND) en 2P sound bogue (mute gauche et droite ?) -> workaround
+	-> (SOUND) dans la page de selection de la musique, si on perdait le focus la musique boguait
+	-> (SOUND) son à l'entrée de jeu
+	-> (GRAPHIC) le neck va plus vite que les notes
+
+- Done v0.99
+	-> (GAME) filtrer les musiques comme FoF
+	-> (GAME) Proposer d'entrer son nom si mode normal
+	-> (GAME) Methode de jeu meilleure - ajouter a notesline le temps de la ligne suivante et gerer -> workaround fait en sorte que les lines ne puissent se superposer
+	-> (GUI) definir autoscale de la font
+	-> (GUI) nettoyer les textures
+	-> (GUI) faire page statistics (recuperer les stats et les gerer)
+	-> (GRAPHIC) garder l'alpha channel ref (passe sur la note) + idem note : smgr de plus
+	-> (GRAPHIC) gridmanager : lignes larges limite décollées
+	-> (GRAPHIC) les lignes de séparation en 1440*900 boguent
+	-> (GRAPHIC) bogue 2P et notes retaillées ? + lignes bord empiettent sur les notes + touches décalées en 2P
+	-> (GRAPHIC) gridManager : agrandir ligne bords
+	-> (GRAPHIC) gridManager : utiliser la rotation en degrès
+	-> (GRAPHIC) note si ratée passe en gris
+	-> (GRAPHIC) 3eme smgr pour la gui 
+	-> (GRAPHIC) gridManager : scale des boutons + notes + paramétriser le constructeur
+	-> (GRAPHIC) gridManager : permettre une gui plus aisée : 2nd guismgr ajouté
+	-> (GRAPHIC) les textures du neck sautent aux jointures des fois
+	-> (CODE/GRAPHIC) sprites 2P boguées -> pbm IDs nodes
+	-> (CODE/GRAPHIC) grid se draw tout seul à partir d'un seul smgr 
+	-> (CODE) paramétriser score counter pour l'adapter à la grid -> lui filer les coordonnées et picétou
+	-> (CODE) virer mess counter (gardé pour debug)
+	-> (CODE) mess counter -> plus de texte mais img plutot et intégré à scoreCounter
+	-> (CODE) sceneManager : vélocité des lights en fonction du time
+	-> (CODE) changer touches par défaut 2P
+	-> (CODE) gridmanager : drawNEWline et setCURRENTlineEffect
+	-> (CODE) faire de la gridManager un objet contenant le score, l'afficheur de mess
+	-> (CODE) sequence : revoir exceptions levels == bloquer la gui
+	-> (CODE) faires des stats qui comptent le nb de notes passées (cad pas d'init a nb notes et du coup suppr de sequence)
+	-> (CODE) delete des stats si restart game
+	-> (CODE) paramétriser mess counter pour l'adapter à la grid
+	-> (CODE) gridmanager compare lui meme (checkLine)
+	-> (CODE) sauvegarde le score dans le fichier ini
+	-> (CODE) pbm Bikini Kill - Rebel Girl - lvl hard -> plante à la fin car tp de notesLines -> réglé (pbm condition dans sequence)
+	-> (CODE) methode pour la guipage virtual void performAction(int action, void val) qui dispatch les actions
+	-> (CODE) séparer les actions graphiques et de la gui ?
+	-> (MISC) nouvelle structure des dossiers (plus de media mais skins langs et scenes)
+	-> (MISC) Dossier scenes où on choisi aléatoirement
+
+
+- Done v0.98
+	-> Mode de jeu - 2P + REFLEX (1 et 2P)
+	-> True Type Support (Attention  à la constante 1.5f de centrage vertical)
+	-> Nouvelle gestion de gui (autoscale + ttf)
+	-> vérifier textes langues (retours à la ligne) -> inutile car gestion auto
+	-> filllistbox remplacer par un get (OK Sequence et Jukebox)
+	-> simplifier sequence (getsonginfos au lieu de x methodes) + parse qui retourne un ptr (simplifier getNotes...)
+	-> fuite mémoire ttfont
+	-> definir le font by string et non par l'obj directement (penser à détruire la font dans le destructeur)
+	-> enums au lieu de defines : game modes (gui actions abandonné car les inputs pour les graph manager passent par là)
+	-> load du fichier mid qu'une fois que l'user choisis la zik == temps de chargements tres courts meme pour 1000 chansons
+	-> revoir le xml pour load EXACTEMENT ce qu'on veut (restructurer tout ceci)
+	-> saccade load song (first time)
+	-> sorts players by scores
+	-> input validator -> input receiver
+	-> preview
+	-> sequence : exception MIDI_FILE == vérif dan jukebox
+	-> son when do not play
+	-> gerer les inputs comme GH
+	-> guipages et pages : revenir au meme etat de la page si retour (ou arrivée apres zik) + si go songselect puis retour puis songselect
+	-> quand on maintient une ligne composée de plusieurs notes, le prendre en compte !
+
+- Done v0.97
+	-> Sauvegarder song.ini avec les scores
+	-> ajouter score est prévu
+	-> serialiser scores + définir les niveaux via l'enum proprement (0 = hard, 1 = normal, etc)
+	-> recuperer les scores depuis la string serialisée (tableau de player*)
+	-> enums au lieu de defines : levels dans sequence
+	-> mettre option fond 3D ou 2D
+	-> ajouter au lanceur l'option pour utiliser la scene 3D du skin
+	-> nouvelles sprites
+	-> revoir coupure son relachement long lines
+	-> enums au lieu de defines : renderstate dans game
+	-> dans gui manager bien tenir a jour seq !! (+lvl)
+	-> setSpeed : dans game du coup
+	-> ajouter au game mode le level ?
+	-> nettoyer les includes 
+	
+- Done v0.96
+	-> 1P et modes normal, reflex
+	-> verifier les stats (apres restart etc...) -> surement params nbNotes	
+	-> plante fin
+	-> song manager setPlaybackSpeed en float et non int
+	-> integrer song manager a sequence
+	-> reload song aux bons endroits
+	-> dans sequence ajouter un gestionnaire de son ? (class)
+	-> regrouper seq et graphics manager
+	-> dans sequence checkLine voir pour error idle et stats
+	-> virer setPlayed de notesLine
+	-> lenght != statistique redeplacer dans sequence -> getPlayLength()
+	-> enums au lieu de defines -> Ok statistics
+	-> graph et gui update() -> render() 
+
+
+- Done v0.95
+	-> si go back to menu before launching song plante
+	-> enums au lieu de defines : OK - GAME_STATE
+	-> stats / credits back
+	-> Definir une classe / struc autre que sirrcreation params pour le jeu
+	-> sons echec, sons menus
+	-> nextLine = true by default pour etre sur de ne rien louper
+	-> getMaxMultiplicator ?
+	-> regrouper still played et played
+	-> (a moitier done) ajouter scene 3D avec gtkradian
+	-> voir do not preload bsp
+	-> ajouter positionnement gui depuis le centre (bool en plus de x et y)
+	-> (INUTILE) virer les maps là où elles ne servent pas (textures texts)
+	-> (INUTILE) preload songs
+
+
+- Done v0.94
+	-> decouper sequence au max (stats, song infos)
+	-> separer dans le fichier xml les sons des textures -> juste exception dans preload all textures tant que pas trop de sons
+	-> revoir gestion sound engine
+	-> pause transparente
+	-> maj score dans sequence saveInfosFile -> ok si beated
+	-> la pause desynchro les sons
+	-> bogue si pause while playing (reinit ?)
+	-> getTexture => getFile dans ressources
+
+
+
+
+// To start, count the maximum beatable score (at max multiplicator)
+int mScore = 0 ;
+for (std::deque<NotesLine*>::iterator it = lines->begin() ; it != lines->end() ; ++it)
+{
+	mScore += ((*it)->getLength() * MAX_MULTIPLICATOR * (*it)->getNotesCount()) + ((*it)->getNotesCount() * BASE_SCORE * MAX_MULTIPLICATOR) ;
+}
+
+// Then split into n parts with almost the same score
+int scored 	= mScore / (((*lines->rbegin())->getEndTime() / 1000) / 30) ; ;
+bool keep 	= player ;
+
+for (std::deque<NotesLine*>::iterator it = lines->begin() ; it < lines->end() ; ++it)
+{
+	int length 		= (*it)->getLength() ;
+	int notesCount 	= (*it)->getNotesCount() ;
+	scored 			-= (length * notesCount * MAX_MULTIPLICATOR) + (notesCount * BASE_SCORE * MAX_MULTIPLICATOR) ;
+
+	if (keep)
+	{					
+		if (scored < 0) // We have a part
+		{
+			keep 	= false ;
+			scored 	= mScore ;	
+		}
+	}
+	else
+	{
+		lines->erase(it) ;
+		
+		if (scored < 0) // We delete next part
+		{
+			keep 	= true ;
+			scored 	= mScore ;
+		}
+	}
+}

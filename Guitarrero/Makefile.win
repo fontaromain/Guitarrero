@@ -1,0 +1,127 @@
+# Project: Guitarrero
+# Compiler: Default GCC compiler
+# Compiler Type: MingW 3
+# Makefile created by wxDev-C++ 7.3 on 12/04/13 12:46
+
+WXLIBNAME = wxmsw28
+CPP       = g++.exe
+CC        = gcc.exe
+WINDRES   = "windres.exe"
+OBJ       = Obj/ObjectMidi.o Obj/Sequence.o Obj/Sequencer.o Obj/Game.o Obj/Jukebox.o Obj/NotesLine.o Obj/GuiManager.o Obj/GraphicsManager.o Obj/Ressources.o Obj/ScoreCounter.o Obj/TimeCounter.o Obj/Configure.o Obj/main.o Obj/GridManager.o Obj/SceneManager.o Obj/SequenceInformations.o Obj/Statistics.o Obj/SongManager.o Obj/Cerealizer.o Obj/CGUIFreeTypeFont.o Obj/GuiPage.o Obj/GuiMainPage.o Obj/GuiStatisticsPage.o Obj/GuiCreditsPage.o Obj/GuiModeSelectPage.o Obj/GuiPausePage.o Obj/GuiSongSelectPage.o Obj/GuiSModeSelectPage.o Obj/InputReceiver.o Obj/GuiNoLevelsPage.o Obj/GameMode.o Obj/Guitarero_private.res
+LINKOBJ   = "Obj/ObjectMidi.o" "Obj/Sequence.o" "Obj/Sequencer.o" "Obj/Game.o" "Obj/Jukebox.o" "Obj/NotesLine.o" "Obj/GuiManager.o" "Obj/GraphicsManager.o" "Obj/Ressources.o" "Obj/ScoreCounter.o" "Obj/TimeCounter.o" "Obj/Configure.o" "Obj/main.o" "Obj/GridManager.o" "Obj/SceneManager.o" "Obj/SequenceInformations.o" "Obj/Statistics.o" "Obj/SongManager.o" "Obj/Cerealizer.o" "Obj/CGUIFreeTypeFont.o" "Obj/GuiPage.o" "Obj/GuiMainPage.o" "Obj/GuiStatisticsPage.o" "Obj/GuiCreditsPage.o" "Obj/GuiModeSelectPage.o" "Obj/GuiPausePage.o" "Obj/GuiSongSelectPage.o" "Obj/GuiSModeSelectPage.o" "Obj/InputReceiver.o" "Obj/GuiNoLevelsPage.o" "Obj/GameMode.o" Obj/Guitarero_private.res
+LIBS      = -L"C:/Program Files (x86)/Dev-Cpp/Lib" -L"Lib" Lib/Irrlicht.a Lib/libIrrlicht.a Lib/libirrKlang.a Lib/freetype.a  -lopengl32 -lwinmm -lgdi32  -mwindows -lwxmsw28 -lwxmsw28_gl -lwxtiff -lwxjpeg -lwxpng -lwxzlib -lwxregex -lwxexpat -lkernel32 -luser32 -lcomdlg32 -lwinspool -lshell32 -lcomctl32 -lole32 -loleaut32 -luuid -lrpcrt4 -ladvapi32 -lwsock32 -lodbc32  -g3 
+INCS      = -I"C:/Program Files (x86)/Dev-Cpp/Include" -I"Include" -I"Include/Irrlicht" -I"Include/irrKlang" -I"Include/FreeType" -I"Ressources"
+CXXINCS   = -I"C:/Program Files (x86)/Dev-Cpp/lib/gcc/mingw32/3.4.5/include" -I"C:/Program Files (x86)/Dev-Cpp/include/c++/3.4.5/backward" -I"C:/Program Files (x86)/Dev-Cpp/include/c++/3.4.5/mingw32" -I"C:/Program Files (x86)/Dev-Cpp/include/c++/3.4.5" -I"C:/Program Files (x86)/Dev-Cpp/include" -I"C:/Program Files (x86)/Dev-Cpp/" -I"C:/Program Files (x86)/Dev-Cpp/include/common/wx/msw" -I"C:/Program Files (x86)/Dev-Cpp/include/common/wx/generic" -I"C:/Program Files (x86)/Dev-Cpp/include/common/wx/html" -I"C:/Program Files (x86)/Dev-Cpp/include/common/wx/protocol" -I"C:/Program Files (x86)/Dev-Cpp/include/common/wx/xml" -I"C:/Program Files (x86)/Dev-Cpp/include/common/wx/xrc" -I"C:/Program Files (x86)/Dev-Cpp/include/common/wx" -I"C:/Program Files (x86)/Dev-Cpp/include/common" -I"Include" -I"Include/Irrlicht" -I"Include/irrKlang" -I"Include/FreeType" -I"Ressources"
+RCINCS    = --include-dir "C:/PROGRA~2/Dev-Cpp/include/common" -I"RESSOU~1"
+BIN       = Bin/Guitarrero.exe
+DEFINES   = 
+CXXFLAGS  = $(CXXINCS) $(DEFINES) -D_IRR_STATIC_LIB_ -D_GRAPHIC_UI_ -D__WXMSW__ -D__GNUWIN32__ -D__WIN95__   -fexpensive-optimizations -O3 -g3
+CFLAGS    = $(INCS) $(DEFINES)    -fexpensive-optimizations -O3 -g3
+GPROF     = gprof.exe
+RM        = rm -f
+LINK      = g++.exe
+
+.PHONY: all all-before all-after clean clean-custom
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	$(RM) $(LINKOBJ) "$(BIN)"
+
+$(BIN): $(OBJ)
+	$(LINK) $(LINKOBJ) -o "$(BIN)" $(LIBS) 
+
+Obj/ObjectMidi.o: $(GLOBALDEPS) Src/ObjectMidi.cpp
+	$(CPP) -c Src/ObjectMidi.cpp -o Obj/ObjectMidi.o $(CXXFLAGS)
+
+Obj/Sequence.o: $(GLOBALDEPS) Src/Sequence.cpp
+	$(CPP) -c Src/Sequence.cpp -o Obj/Sequence.o $(CXXFLAGS)
+
+Obj/Sequencer.o: $(GLOBALDEPS) Src/Sequencer.cpp
+	$(CPP) -c Src/Sequencer.cpp -o Obj/Sequencer.o $(CXXFLAGS)
+
+Obj/Game.o: $(GLOBALDEPS) Src/Game.cpp
+	$(CPP) -c Src/Game.cpp -o Obj/Game.o $(CXXFLAGS)
+
+Obj/Jukebox.o: $(GLOBALDEPS) Src/Jukebox.cpp
+	$(CPP) -c Src/Jukebox.cpp -o Obj/Jukebox.o $(CXXFLAGS)
+
+Obj/NotesLine.o: $(GLOBALDEPS) Src/NotesLine.cpp
+	$(CPP) -c Src/NotesLine.cpp -o Obj/NotesLine.o $(CXXFLAGS)
+
+Obj/GuiManager.o: $(GLOBALDEPS) Src/GuiManager.cpp
+	$(CPP) -c Src/GuiManager.cpp -o Obj/GuiManager.o $(CXXFLAGS)
+
+Obj/GraphicsManager.o: $(GLOBALDEPS) Src/GraphicsManager.cpp
+	$(CPP) -c Src/GraphicsManager.cpp -o Obj/GraphicsManager.o $(CXXFLAGS)
+
+Obj/Ressources.o: $(GLOBALDEPS) Src/Ressources.cpp
+	$(CPP) -c Src/Ressources.cpp -o Obj/Ressources.o $(CXXFLAGS)
+
+Obj/ScoreCounter.o: $(GLOBALDEPS) Src/ScoreCounter.cpp
+	$(CPP) -c Src/ScoreCounter.cpp -o Obj/ScoreCounter.o $(CXXFLAGS)
+
+Obj/TimeCounter.o: $(GLOBALDEPS) Src/TimeCounter.cpp
+	$(CPP) -c Src/TimeCounter.cpp -o Obj/TimeCounter.o $(CXXFLAGS)
+
+Obj/Configure.o: $(GLOBALDEPS) Ressources/Configure.cpp
+	$(CPP) -c Ressources/Configure.cpp -o Obj/Configure.o $(CXXFLAGS)
+
+Obj/main.o: $(GLOBALDEPS) Ressources/main.cpp
+	$(CPP) -c Ressources/main.cpp -o Obj/main.o $(CXXFLAGS)
+
+Obj/GridManager.o: $(GLOBALDEPS) Src/GridManager.cpp
+	$(CPP) -c Src/GridManager.cpp -o Obj/GridManager.o $(CXXFLAGS)
+
+Obj/SceneManager.o: $(GLOBALDEPS) Src/SceneManager.cpp
+	$(CPP) -c Src/SceneManager.cpp -o Obj/SceneManager.o $(CXXFLAGS)
+
+Obj/SequenceInformations.o: $(GLOBALDEPS) Src/SequenceInformations.cpp
+	$(CPP) -c Src/SequenceInformations.cpp -o Obj/SequenceInformations.o $(CXXFLAGS)
+
+Obj/Statistics.o: $(GLOBALDEPS) Src/Statistics.cpp
+	$(CPP) -c Src/Statistics.cpp -o Obj/Statistics.o $(CXXFLAGS)
+
+Obj/SongManager.o: $(GLOBALDEPS) Src/SongManager.cpp
+	$(CPP) -c Src/SongManager.cpp -o Obj/SongManager.o $(CXXFLAGS)
+
+Obj/Cerealizer.o: $(GLOBALDEPS) Src/Cerealizer.cpp
+	$(CPP) -c Src/Cerealizer.cpp -o Obj/Cerealizer.o $(CXXFLAGS)
+
+Obj/CGUIFreeTypeFont.o: $(GLOBALDEPS) Src/CGUIFreeTypeFont.cpp
+	$(CPP) -c Src/CGUIFreeTypeFont.cpp -o Obj/CGUIFreeTypeFont.o $(CXXFLAGS)
+
+Obj/GuiPage.o: $(GLOBALDEPS) Src/GuiPage.cpp
+	$(CPP) -c Src/GuiPage.cpp -o Obj/GuiPage.o $(CXXFLAGS)
+
+Obj/GuiMainPage.o: $(GLOBALDEPS) Src/GuiMainPage.cpp
+	$(CPP) -c Src/GuiMainPage.cpp -o Obj/GuiMainPage.o $(CXXFLAGS)
+
+Obj/GuiStatisticsPage.o: $(GLOBALDEPS) Src/GuiStatisticsPage.cpp
+	$(CPP) -c Src/GuiStatisticsPage.cpp -o Obj/GuiStatisticsPage.o $(CXXFLAGS)
+
+Obj/GuiCreditsPage.o: $(GLOBALDEPS) Src/GuiCreditsPage.cpp
+	$(CPP) -c Src/GuiCreditsPage.cpp -o Obj/GuiCreditsPage.o $(CXXFLAGS)
+
+Obj/GuiModeSelectPage.o: $(GLOBALDEPS) Src/GuiModeSelectPage.cpp
+	$(CPP) -c Src/GuiModeSelectPage.cpp -o Obj/GuiModeSelectPage.o $(CXXFLAGS)
+
+Obj/GuiPausePage.o: $(GLOBALDEPS) Src/GuiPausePage.cpp
+	$(CPP) -c Src/GuiPausePage.cpp -o Obj/GuiPausePage.o $(CXXFLAGS)
+
+Obj/GuiSongSelectPage.o: $(GLOBALDEPS) Src/GuiSongSelectPage.cpp
+	$(CPP) -c Src/GuiSongSelectPage.cpp -o Obj/GuiSongSelectPage.o $(CXXFLAGS)
+
+Obj/GuiSModeSelectPage.o: $(GLOBALDEPS) Src/GuiSModeSelectPage.cpp
+	$(CPP) -c Src/GuiSModeSelectPage.cpp -o Obj/GuiSModeSelectPage.o $(CXXFLAGS)
+
+Obj/InputReceiver.o: $(GLOBALDEPS) Src/InputReceiver.cpp
+	$(CPP) -c Src/InputReceiver.cpp -o Obj/InputReceiver.o $(CXXFLAGS)
+
+Obj/GuiNoLevelsPage.o: $(GLOBALDEPS) Src/GuiNoLevelsPage.cpp
+	$(CPP) -c Src/GuiNoLevelsPage.cpp -o Obj/GuiNoLevelsPage.o $(CXXFLAGS)
+
+Obj/GameMode.o: $(GLOBALDEPS) Src/GameMode.cpp
+	$(CPP) -c Src/GameMode.cpp -o Obj/GameMode.o $(CXXFLAGS)
+
+Obj/Guitarero_private.res: Obj/Guitarero_private.rc Ressources/main.rc 
+	$(WINDRES) --input-format=rc -o Obj/Guitarero_private.res $(RCINCS) Obj/GUITAR~2.RC -O coff
